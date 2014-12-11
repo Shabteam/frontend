@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>ShabTeam</title>
+	<title>Contact Us</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -13,45 +13,37 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700' rel='stylesheet' type='text/css'>
-		</head>
-		<body>
-
-			<header id="header">
-				<div id="sidebar-content">
-
-					<div class="logo">
-						<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-					</div>
-
-					<nav id="nav-container">
-						<ul>
-						<li><a href="index.html">Index</a></li>
-		
-							<li><a href="team.html">Team</a></li>
-							<li><a href="projects.html">Projects</a></li>
-
+</head>
+<body>
+	<header id="header">
+		<div id="sidebar-content">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+			</div>
+			<nav id="nav-container">
+				<ul>
+					<li><a href="index.html">Index</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="projects.html">Projects</a></li>
 					<li><a href="contact.html">Contact</a></li>
-						</ul>
-
+				</ul>
 					<div class="social-container">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/shabteam.officiel?ref=ts&fref=ts"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/shabteam_t"><i class="fa fa-twitter"></i></a>
 						<a href="https://github.com/Shabteam/"><i class="fa fa-github"></i></a>
 					</div>
-
-					<div id="footer">
-						<div id="footer-content">
-							<span class="copy">Impacto by <a href="http://themeforest.net/user/subsolar/portfolio">ShabTeam</a></span>
-						</div>
+				<div id="footer">
+					<div id="footer-content">
+						<span class="copy">Impacto by <a href="http://themeforest.net/user/subsolar/portfolio">ShabTeam</a></span>
 					</div>
-
 				</div>
-			</header>
+			</div>
+		</header>
 		<div class="main-content">
 			<section class="section-block">
 				<h1 class="section-title wow bounceIn" ><span class="light">Contact Us</span></h1>
 				<div class="divider"></div>
-				<span class="tagline wow fadeInUp">Conctact Us Here !  U know man ?</span>
+				<span class="tagline wow fadeInUp">Conctact Us Here ! </span>
 				<div class="row wow bounceInLeft" data-wow-delay="0.5s">
 					<div class="col-sm-7">
 						<form action="process.php" id="contactForm" method="post">
@@ -112,73 +104,70 @@
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 		<script>
-			window.onload = function () {
 
-				var styles = [
-				 	{
-						featureType: "all",
-						elementType: "all",
-						stylers: [
-							{ saturation: -100 }
-						]
-					},
-					{
-						featureType: 'water',
-						elementType: 'geometry.fill',
-						stylers: [
-							{ color: '#CBD6D0' }
-						]
-					},
-					{
-						featureType: 'landscape',
-						elementType: 'geometry.fill',
-						stylers: [
-							{ color: '#E8E8E8' }
-						]
-					},
-					{
-						featureType: 'road.highway',
-						elementType: 'geometry.fill',
-						stylers: [
-							{ color: '#EF97AE' }
-						]
-					},
-					{
-						featureType: 'road.highway',
-						elementType: 'geometry.stroke',
-						stylers: [
-							{ color: '#EF97AE' }
-						]
-					}
-				];
+		var styles = [
+		{
+			featureType: "all",
+			elementType: "all",
+			stylers: [
+			{ saturation: -100 }
+			]
+		},
+		{
+			featureType: 'water',
+			elementType: 'geometry.fill',
+			stylers: [
+			{ color: '#CBD6D0' }
+			]
+		},
+		{
+			featureType: 'landscape',
+			elementType: 'geometry.fill',
+			stylers: [
+			{ color: '#E8E8E8' }
+			]
+		},
+		{
+			featureType: 'road.highway',
+			elementType: 'geometry.fill',
+			stylers: [
+			{ color: '#EF97AE' }
+			]
+		},
+		{
+			featureType: 'road.highway',
+			elementType: 'geometry.stroke',
+			stylers: [
+			{ color: '#EF97AE' }
+			]
+		}
+		];
 
-			var myLatlng = new google.maps.LatLng(51.512508,-0.096266); // Latitude and Longitude
+		function initialize() {
+			var myLatlng = new google.maps.LatLng(43.6074704, 3.8741790000000265);
+			
+			var options = {
+				mapTypeControlOptions: {mapTypeIds: ['Styled']},
+				center: myLatlng,
+				zoom: 15,
+				mapTypeId: 'Styled'
+			};
+			var div = document.getElementById('google-maps');
+			var image = 'images/marker.png';
+			var map = new google.maps.Map(div, options);
+			var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
 
-	        var options = {
-	        	mapTypeControlOptions: {
-	        		mapTypeIds: ['Styled']
-	        	},
-	        	center: myLatlng,
-	        	zoom: 15,
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				icon: image,
+				title: 'Shab Team!'
+			});
+			map.mapTypes.set('Styled', styledMapType);
+		};
 
-	        	mapTypeId: 'Styled'
-	        };
-
-	        var div = document.getElementById('google-maps');
-	        var image = 'images/marker.png';
-	        var map = new google.maps.Map(div, options);
-	        var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
-
-	        var marker = new google.maps.Marker({
-	        	position: myLatlng,
-	        	map: map,
-	        	icon: image,
-	        	title: 'Hello World!'
-	        });
-
-	        map.mapTypes.set('Styled', styledMapType);
-	    };
-
+		google.maps.event.addDomListener(window, 'load', initialize);
+	
 		</script>
 
 		<script type="text/javascript">
@@ -203,38 +192,38 @@
 
 		<script>
 
-			$(document).ready(function(){
+		$(document).ready(function(){
 
 			$('button[type=submit]').click(function () {
 
-		    	var name = $('input[name=contactName]');
-		    	var email = $('input[name=email]');
-		    	var message = $('textarea[name=comments]');
+				var name = $('input[name=contactName]');
+				var email = $('input[name=email]');
+				var message = $('textarea[name=comments]');
 
-		    	var data = 'contactName=' + name.val() + '&email=' + email.val() +
-		    	'&comments='  + encodeURIComponent(message.val());
+				var data = 'contactName=' + name.val() + '&email=' + email.val() +
+				'&comments='  + encodeURIComponent(message.val());
 
-		        $(this).attr("disabled", "disabled").text('Sending...');
-		        $.ajax({
-		            url: "process.php",
-		            type: "GET",
-		            data: data,
-		            cache: false,
-		            success: function (html) {
-		            	console.log(html);
-		                if (html==true) {
-		                    $('form').children().fadeOut('slow');
-		                    $('form').text('Thank you! We have received your message.');
-		                    $('.done').fadeIn('slow');
-		                    $('.text').removeAttr('disabled');
-		          		} else {
-			            	alert('Sorry, unexpected error. Please try again later.');
-				            $('.text').removeAttr('disabled');
-			            }
-			        }
-			    });
-		        return false;
-		    });
+				$(this).attr("disabled", "disabled").text('Sending...');
+				$.ajax({
+					url: "process.php",
+					type: "GET",
+					data: data,
+					cache: false,
+					success: function (html) {
+						console.log(html);
+						if (html==true) {
+							$('form').children().fadeOut('slow');
+							$('form').text('Thank you! We have received your message.');
+							$('.done').fadeIn('slow');
+							$('.text').removeAttr('disabled');
+						} else {
+							alert('Sorry, unexpected error. Please try again later.');
+							$('.text').removeAttr('disabled');
+						}
+					}
+				});
+				return false;
+			});
 		});
 
 		</script>
@@ -242,4 +231,4 @@
 		<script src="js/custom.js"></script>
 
 	</body>
-</html>
+	</html>

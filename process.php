@@ -21,7 +21,7 @@ if (!$message) $errors[count($errors)] = 'Please enter your message.';
 if (!$errors) {
 
 	//recipient
-	$to = 'Your Name <yourEmail@domain.com>';
+	$to = 'Your Name <contact.shabteam@gmail.com>';
 	//sender
 	$from = $name . ' <' . $email . '>';
 
@@ -54,7 +54,7 @@ if (!$errors) {
 	//1 means success, 0 means failed
 	} else {
 		echo $result;
-	}
+	}-
 
 //if the errors array has values
 } else {

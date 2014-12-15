@@ -34,7 +34,7 @@
 					</div>
 				<div id="footer">
 					<div id="footer-content">
-						<span class="copy">Impacto by <a href="http://themeforest.net/user/subsolar/portfolio">ShabTeam</a></span>
+						<span class="copy">Made by ShabTeam</span>
 					</div>
 				</div>
 			</div>
@@ -144,8 +144,8 @@
 		];
 
 		function initialize() {
-			var myLatlng = new google.maps.LatLng(43.6074704, 3.8741790000000265);
 			
+			var myLatlng = new google.maps.LatLng(43.6074704, 3.8741790000000265);			
 			var options = {
 				mapTypeControlOptions: {mapTypeIds: ['Styled']},
 				center: myLatlng,
@@ -165,7 +165,6 @@
 			});
 			map.mapTypes.set('Styled', styledMapType);
 		};
-
 		google.maps.event.addDomListener(window, 'load', initialize);
 	
 		</script>

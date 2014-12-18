@@ -38,7 +38,7 @@ convert them for the RGB values where needed.
 }
 
 .bg-color, .contactform input, .contactform textarea {
-  background-color: #f7f7f7;
+  background-color: #000000;
 }
 
 .highlight, .project-pager .slides-total {
@@ -60,7 +60,7 @@ convert them for the RGB values where needed.
   position: relative;
   background-color: transparent;
   outline: 0;
-  border: 2px solid #333333;
+  border: 2px solid #ffffff;
   display: inline-block;
   padding: 7px 20px;
 }
@@ -248,7 +248,8 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 15px;
-  color: #616161;
+  background-color: #000000;
+  color: #8E939A;
 }
 
 input, textarea {
@@ -261,7 +262,7 @@ p, blockquote p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: black;
+  color: white;
   margin-top: 0;
 }
 
@@ -330,14 +331,14 @@ a {
   -o-transition: 0.2s;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  color: #555555;
+  color: #FFFFFF;
 }
 a:focus {
   outline: none;
 }
 
 a:hover, a:focus {
-  color: black;
+  color: ##245297;
   text-decoration: none;
 }
 
@@ -917,7 +918,7 @@ iframe.no-border {
   width: 100%;
   padding: 100px 20px;
   margin: 0;
-  color: #616161;
+  color: #ffffff;
 }
 .section-block p {
   margin: 0 0 20px;
@@ -1045,16 +1046,16 @@ iframe.no-border {
   transition: 0.3s;
 }
 .filters li:hover a, .filters li.selected a {
-  color: #fff;
+  color: #0E3268;
 }
 .filters li.selected {
-  background-color: #333333;
+  background-color: #8E939A;
 }
 .filters li:first-child {
   margin-left: 0;
 }
 .filters a {
-  color: #000;
+  color: #046380;
   display: block;
   padding: 10px;
 }
@@ -1258,7 +1259,7 @@ iframe.no-border {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(51,102,255,0.25);
   bottom: 0;
   width: 100%;
   height: 85px;
@@ -1284,7 +1285,7 @@ iframe.no-border {
 }
 
 .masonry-grid-item:hover .project-info {
-  background-color: #fff;
+  background-color: rgba(51,102,255,0.2);
   padding-top: 50px;
   height: 100%;
 }
@@ -1716,7 +1717,7 @@ iframe.no-border {
 .contactform input {
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #ffffff;
   border-left: 1px solid #999999;
   width: 100%;
   padding: 10px;

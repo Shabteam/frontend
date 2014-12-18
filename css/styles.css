@@ -660,7 +660,7 @@ span.select .icon-menu {
 .normal-slider img {
   width: 100%;
   max-height: none;
-  height: auto;
+  height: 600px;
 }
 .normal-slider:hover .bx-next {
   right: 20px;
